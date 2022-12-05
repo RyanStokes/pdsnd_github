@@ -7,6 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+#Valid months is a dictionary of months (1-6) in different formats
 VALID_MONTHS = {'all':0,
                 'january':1,'jan':1,'1':1,
                 'february':2,'feb':2,'2':2,
@@ -15,6 +16,7 @@ VALID_MONTHS = {'all':0,
                 'may':5,'may':5,'5':5,
                 'june':6,'jun':6,'6':6}
 
+#Valid days is a dictionary of all days in different formats
 VALID_DAYS = {'all':-1,
               'monday':0,'mon':0,'0':0,
               'tuesday':1,'tue':1,'1':1,
@@ -33,7 +35,7 @@ def get_filters():
         (int) month - int of the month to filter by, or "0" to apply no month filter
         (int) day - int of the day of week to filter by, or "-1" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello there! Let\'s explore some US bikeshare data!')
     
     # Get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = ""
@@ -245,7 +247,7 @@ def main():
         user_stats(df)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Please enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
