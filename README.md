@@ -5,11 +5,13 @@
 Bike-Share Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project looks at Bike-Share data
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This project is part of Udacity data science course.
+The repo was forked from the template: https://github.com/udacity/pdsnd_github
